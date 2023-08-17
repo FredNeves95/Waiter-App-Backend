@@ -61,7 +61,10 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    yarn or npm install
    ```
-3. Run the Mongo container in port 27017:27017
+<!-- USAGE EXAMPLES -->
+## Usage
+
+1. Run the Mongo container in port 27017:27017
    
    -  Already have the container installed?
    ```sh
@@ -71,29 +74,15 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    docker run --name mongo -p 27017:27017 -d mongo
    ```
-4. Build the project
+2. Build the project
    ```sh
    yarn build
    ```
-5. Start the project
+3. Start the project
    ```sh
    yarn start
    ```
 *Remember to alwais run the container before starting the server.*
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
