@@ -25,7 +25,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project was created with the pourpose to improve my backend skills.
+This project was created with the purpose to improve my backend skills.
 
 It simulates a restaurant system, where:
 - Administration can create/edit/delete categories and its products
