@@ -1,6 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import path from 'node:path';
+import cors from 'cors';
 
 import { router } from './router';
 
@@ -10,6 +11,7 @@ mongoose.connect('mongodb://localhost:27017')
     const port = 3001;
 
     app.use(express.json());
+    app.use(cors());
     app.use(router);
     app.use('/uploads', express.static(path.resolve(__dirname, '..', 'uploads')));
 
