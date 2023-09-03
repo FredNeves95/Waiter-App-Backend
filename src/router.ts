@@ -55,3 +55,9 @@ router.patch('/orders/:orderId', changeOrderStatus);
 
 // Delete order
 router.delete('/orders/:orderId', deleteOrder);
+
+// Confirm server is running
+
+router.get('/', (req, res) => {
+  res.send('Hello World');
+});
