@@ -48,3 +48,7 @@ exports.router.post('/orders', createOrder_1.createOrder);
 exports.router.patch('/orders/:orderId', changeOrderStatus_1.changeOrderStatus);
 // Delete order
 exports.router.delete('/orders/:orderId', deleteOrder_1.deleteOrder);
+// Confirm server is running
+exports.router.get('/', (req, res) => {
+    res.send('Hello World');
+});
