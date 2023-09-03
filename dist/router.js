@@ -50,5 +50,5 @@ exports.router.patch('/orders/:orderId', changeOrderStatus_1.changeOrderStatus);
 exports.router.delete('/orders/:orderId', deleteOrder_1.deleteOrder);
 // Confirm server is running
 exports.router.get('/', (req, res) => {
-    res.send('Hello World');
+    return res.send('Hello World');
 });

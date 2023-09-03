@@ -59,5 +59,5 @@ router.delete('/orders/:orderId', deleteOrder);
 // Confirm server is running
 
 router.get('/', (req, res) => {
-  res.send('Hello World');
+  return res.send('Hello World');
 });
