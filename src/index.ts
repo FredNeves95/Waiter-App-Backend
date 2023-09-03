@@ -8,7 +8,7 @@ import { router } from './router';
 mongoose.connect('mongodb+srv://fredbneves95:E5eqp3CpFQrMLjN0@waiter-app-db.i7fkcrz.mongodb.net/?retryWrites=true&w=majority')
   .then(() => {
     const app = express();
-    const port = 3001;
+    const port = process.env.PORT || 3001;
 
     app.use(express.json());
     app.use(cors());
@@ -16,7 +16,7 @@ mongoose.connect('mongodb+srv://fredbneves95:E5eqp3CpFQrMLjN0@waiter-app-db.i7fk
     app.use('/uploads', express.static(path.resolve(__dirname, '..', 'uploads')));
 
     app.listen(port, () => {
-      console.log(`Server is running on http://localhost:${3001}`);
+      console.log(`Server is running on http://localhost:${port}`);
     });
 
   })
