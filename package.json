@@ -4,14 +4,21 @@
   "description": "This repo is used for study. It simulates a backend structure from a delivery application",
   "main": "index.js",
   "engines": {
-    "node": "14.x"
+    "node": "18.x"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "rimraf dist && tsc",
     "dev": "nodemon src/index.ts",
     "start": "node dist",
+    "ts.check": "tsc --project tsconfig.json",
+    "add-build": "git add dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "pre-commit": [
+    "ts.check",
+    "build",
+    "add-build"
+  ],
   "author": "Fred Neves",
   "license": "ISC",
   "dependencies": {
@@ -29,6 +36,8 @@
     "@typescript-eslint/parser": "^6.4.0",
     "eslint": "^8.47.0",
     "nodemon": "^3.0.1",
+    "pre-commit": "^1.2.2",
+    "rimraf": "^5.0.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.1.6"
   }
