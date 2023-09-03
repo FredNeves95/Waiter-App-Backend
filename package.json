@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "This repo is used for study. It simulates a backend structure from a delivery application",
   "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "build": "tsc",
     "dev": "nodemon src/index.ts",
