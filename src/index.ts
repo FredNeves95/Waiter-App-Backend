@@ -5,7 +5,7 @@ import cors from 'cors';
 
 import { router } from './router';
 
-mongoose.connect('mongodb://localhost:27017')
+mongoose.connect('mongodb+srv://fredbneves95:E5eqp3CpFQrMLjN0@waiter-app-db.i7fkcrz.mongodb.net/?retryWrites=true&w=majority')
   .then(() => {
     const app = express();
     const port = 3001;
