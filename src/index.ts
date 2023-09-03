@@ -5,9 +5,9 @@ import cors from 'cors';
 
 import { router } from './router';
 
-export const app = express();
 mongoose.connect('mongodb+srv://fredbneves95:E5eqp3CpFQrMLjN0@waiter-app-db.i7fkcrz.mongodb.net/?retryWrites=true&w=majority')
   .then(() => {
+    const app = express();
     const port = process.env.PORT || 3001;
 
     app.use(express.json());
