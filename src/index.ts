@@ -20,4 +20,7 @@ mongoose.connect('mongodb+srv://fredbneves95:E5eqp3CpFQrMLjN0@waiter-app-db.i7fk
     });
 
   })
-  .catch(()=> console.log('Erro ao conectar no MongoDB'));
+  .catch((error)=> {
+    console.log({ error });
+    console.log('Erro ao conectar no MongoDB');}
+  );
