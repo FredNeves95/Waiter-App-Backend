@@ -12,6 +12,9 @@ import { listOrders } from './useCases/Orders/listOrders';
 import { createOrder } from './useCases/Orders/createOrder';
 import { changeOrderStatus } from './useCases/Orders/changeOrderStatus';
 import { deleteOrder } from './useCases/Orders/deleteOrder';
+import { listHistory } from './useCases/History/listHistory';
+import { deleteHistory } from './useCases/History/deleteHistory';
+import { createHistory } from './useCases/History/createHistory';
 
 export const router = Router();
 
@@ -55,6 +58,15 @@ router.patch('/orders/:orderId', changeOrderStatus);
 
 // Delete order
 router.delete('/orders/:orderId', deleteOrder);
+
+// List history
+router.get('/history', listHistory);
+
+// Create history
+router.post('/history', createHistory);
+
+// Delete history
+router.delete('/history/:id', deleteHistory);
 
 // Confirm server is running
 

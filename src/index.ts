@@ -4,7 +4,8 @@ import path from 'node:path';
 import cors from 'cors';
 
 import { router } from './router';
-
+// mongodb://localhost:27017
+//
 mongoose.connect('mongodb+srv://fredbneves95:E5eqp3CpFQrMLjN0@waiter-app-db.i7fkcrz.mongodb.net/?retryWrites=true&w=majority')
   .then(() => {
     const app = express();
